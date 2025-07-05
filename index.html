@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Track Your Package - Personal Delivery Express</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f6f6;
+      padding: 50px;
+      text-align: center;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+    input {
+      padding: 10px;
+      width: 80%;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+    .result {
+      margin-top: 30px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Track Your Package</h2>
+    <input type="text" id="trackingNumber" placeholder="Enter Tracking Number">
+    <br>
+    <button onclick="showResult()">Track</button>
+
+    <div class="result" id="result">
+      <h3>Status: In Transit</h3>
+      <p><strong>Tracking Number:</strong> RX203942934</p>
+      <p><strong>Location:</strong> Lagos Distribution Hub</p>
+      <p><strong>Estimated Delivery:</strong> Tomorrow by 11:40 AM</p>
+    </div>
+  </div>
+
+  <script>
+    function showResult() {
+      document.getElementById("result").style.display = "block";
+    }
+  </script>
+</body>
+</html>
